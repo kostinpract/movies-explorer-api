@@ -2,23 +2,25 @@
 
 API для дипломного проекта
 
-### возвращает информацию о пользователе (email и имя)
+Доступно по ссылке: https://api.kostinpract.nomoreparties.sbs/
+
+### Возвращает информацию о пользователе (email и имя)
 GET /users/me
 
-### обновляет информацию о пользователе (email и имя)
+### Обновляет информацию о пользователе (email и имя)
 PATCH /users/me
 
-### возвращает все сохранённые текущим  пользователем фильмы
+### Возвращает все сохранённые текущим пользователем фильмы
 GET /movies
 
-### создаёт фильм с переданными в теле country, director, duration, year, description, image, trailer, nameRU, nameEN и thumbnail, movieId
+### Создаёт фильм с переданными в теле country, director, duration, year, description, image, trailer, nameRU, nameEN и thumbnail, movieId
 POST /movies
 
-### удаляет сохранённый фильм по id
+### Удаляет сохранённый фильм по id
 DELETE /movies/_id
 
-### создаёт пользователя с переданными в теле email, password и name
+### Создаёт пользователя с переданными в теле email, password и name
 POST /signup
 
-### проверяет переданные в теле почту и пароль и возвращает JWT
+### Проверяет переданные в теле почту и пароль и возвращает JWT
 POST /signin
